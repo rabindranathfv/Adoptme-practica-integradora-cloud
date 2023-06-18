@@ -1,0 +1,105 @@
+paths:
+  /api/adoptions/:
+    get:
+      summary: get all the adoptions
+      tags:
+        - Adoptions
+      responses:
+        "200":
+          description: get all adoptions from DB
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#components/schemas/ResponseGetAdoptionsOK"
+  /api/adoptions/{aid}/:
+    get:
+      summary: get adoption by id with details
+      tags:
+        - Adoptions
+      responses:
+        "200":
+          description: get all details from an specific adoption
+          content:
+            application/json:
+              schema:
+                $ref: "#components/schemas/ResponseGetAdoptionsOK"
+        "404":
+          description: find adoption by id
+          content:
+            application/json:
+              schema:
+                $ref: "#components/schemas/ResponseErrorAdoptNotExist"
+  /api/adoptions/{uid}/{pid}/:
+    post:
+      summary: make adoption process from user with an specific pet
+      tags:
+        - Adoptions
+      responses:
+        "200":
+          description: an user adopts a specific pet
+          content:
+            application/json:
+              schema:
+                $ref: "#components/schemas/ResponseAdoptionOK"
+        "404":
+          description: error based on user's id, pet's id or it's already adopted
+          content:
+            application/json:
+              schema:
+                $ref: "#components/schemas/ResponseErrorPetAdopted"
+
+components:
+  schemas:
+    Adoption:
+      type: object
+      properties:
+        owner:
+          type: string
+          format: uuid
+          description: user's id in mongo format
+        pet:
+          type: string
+          format: uuid
+          description: pet's id in mongo format
+    ResponseGetAdoptionsOK:
+      type: object
+      properties:
+        status:
+          type: string
+          description: status can be success or error
+        payload:
+          $ref: "#components/schemas/Adoption"
+    ResponseAdoptionOK:
+      type: object
+      properties:
+        status:
+          type: string
+          description: status can be success or error
+        message:
+          type: string
+          description: adoption was doing ok
+          example: Pet adopted
+    ResponseErrorAdoptNotExist:
+      type: object
+      properties:
+        status:
+          type: string
+          description: can be succes or error
+          example: error
+        message:
+          type: string
+          description: message explain the error
+          example: Adoption not found
+    ResponseErrorPetAdopted:
+      type: object
+      properties:
+        status:
+          type: string
+          description: can be succes or error
+          example: error
+        message:
+          type: string
+          description: message explain the error
+          example: Pet is already adopted or Pet not found or user Not found

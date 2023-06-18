@@ -15,6 +15,22 @@ paths:
                   $ref: "#components/schemas/Pet"
         "500":
           description: error server side
+    post:
+      summary: create a pet
+      tags:
+        - Pets
+      description: create a pet
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#components/schemas/Pet"
+      responses:
+        "200":
+          description: create pets
+        "404":
+          description: missing some fields in body
   /api/pets/{pid}/:
     delete:
       summary: delete pets by id
