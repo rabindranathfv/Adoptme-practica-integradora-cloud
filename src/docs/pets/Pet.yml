@@ -25,7 +25,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "#components/schemas/Pet"
+              $ref: "#components/schemas/PetBody"
       responses:
         "200":
           description: create pets
@@ -81,3 +81,16 @@ components:
         birthDate: 2018-01-01
         adopted: true
         image: <binary>
+    PetBody:
+      type: object
+      properties:
+        name:
+          type: string
+          description: name of the pet
+        specie:
+          type: string
+          description: specie of the pet
+        birthDate:
+          type: string
+          format: date
+          description: birthdate of the pet
