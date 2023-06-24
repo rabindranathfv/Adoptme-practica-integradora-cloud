@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import cookieParser from "cookie-parser";
 import displayRoutes from "express-routemap";
 import cors from "cors";
+import morgan from "morgan";
 
 import swaggerJSDoc from "swagger-jsdoc";
 import swaggerUi from "swagger-ui-express";
@@ -13,6 +14,7 @@ import adoptionsRouter from "./routes/adoption.router.js";
 import sessionsRouter from "./routes/sessions.router.js";
 import __dirname from "./utils/index.js";
 import { swaggerOpts } from "./config/swagger.config.js";
+import { logger, stream } from "./utils/logger.js";
 
 const app = express();
 const PORT = process.env.PORT;
@@ -30,10 +32,10 @@ console.log("🚀 ~ file: app.js:19 ~ MONGO_URL:", MONGO_URL);
 const connection = mongoose
   .connect(`${MONGO_URL}`)
   .then((conn) => {
-    console.log(`🚀 ~ file: app.js:25 ~ CONECT WITH MONGO URL:`);
+    logger.info(`🚀 ~ file: app.js:25 ~ CONECT WITH MONGO URL:`);
   })
   .catch((err) => {
-    console.log("🚀 ~ file: app.js:28 ~ err:", err);
+    logger.info("🚀 ~ file: app.js:28 ~ err:", err);
   });
 
 app.use(express.json());
@@ -45,6 +47,7 @@ app.use(
     methods: ["GET", "PUT", "DELETE", "POST"],
   })
 );
+app.use(morgan("../logs", { stream }));
 
 const specs = swaggerJSDoc(swaggerOpts);
 
@@ -56,5 +59,5 @@ app.use("/api/docs/", swaggerUi.serve, swaggerUi.setup(specs));
 
 app.listen(PORT_APP, () => {
   displayRoutes(app);
-  console.log(`Listening on ${PORT_APP}`);
+  logger.info(`Listening on ${PORT_APP}`);
 });

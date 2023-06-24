@@ -15,11 +15,28 @@ paths:
                   $ref: "#components/schemas/Pet"
         "500":
           description: error server side
+    post:
+      summary: create a pet
+      tags:
+        - Pets
+      description: create a pet
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PetDto"
+      responses:
+        "200":
+          description: create pet succesfully
+        "400":
+          description: missing some fields in body
   /api/pets/{pid}/:
     delete:
       summary: delete pets by id
       tags:
         - Pets
+      description: this method is a hard delete for a pet
       parameters:
         - name: pid
           in: path
@@ -65,3 +82,20 @@ components:
         birthDate: 2018-01-01
         adopted: true
         image: <binary>
+    PetDto:
+      type: object
+      properties:
+        name:
+          type: string
+          description: name of the pet
+        specie:
+          type: string
+          description: specie of the pet
+        birthDate:
+          type: string
+          format: date
+          description: birthdate of the pet
+      example:
+        name: shamu
+        specie: dog
+        birthDate: 2018-01-01

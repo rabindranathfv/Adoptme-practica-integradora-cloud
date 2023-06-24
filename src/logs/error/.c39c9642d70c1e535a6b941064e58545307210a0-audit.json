@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/src/logs/error/.c39c9642d70c1e535a6b941064e58545307210a0-audit.json",
+    "files": [
+        {
+            "date": 1687613734847,
+            "name": "/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/src/logs/error/2023-06-24.log",
+            "hash": "b027c5c58a8829884c6b2ac1455311a9617f1e63ba293425f69001c4f2a66f85"
+        }
+    ],
+    "hashType": "sha256"
+}

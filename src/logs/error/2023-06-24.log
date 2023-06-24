@@ -1,0 +1,80 @@
+2023-06-24 17:02:07 error: uncaughtException: listen EADDRINUSE: address already in use :::5000
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at Server.listen (node:net:1508:7)
+    at Function.listen (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/express/lib/application.js:635:24)
+    at file:///home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/src/app.js:60:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:198:25)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:385:24)
+    at async importModuleDynamicallyWrapper (node:internal/vm/module:437:15)
+    at async formattedImport (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/nodejs/esm-utils.js:9:14)
+    at async Object.exports.requireOrImport (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/nodejs/esm-utils.js:42:28)
+    at async Object.exports.loadFilesAsync (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/nodejs/esm-utils.js:100:20)
+    at async singleRun (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/cli/run-helpers.js:125:3)
+    at async Object.exports.handler (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/cli/run.js:370:5)
+2023-06-24 17:05:29 error: uncaughtException: listen EADDRINUSE: address already in use :::5000
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at Server.listen (node:net:1508:7)
+    at Function.listen (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/express/lib/application.js:635:24)
+    at file:///home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/src/app.js:60:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:198:25)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:385:24)
+    at async importModuleDynamicallyWrapper (node:internal/vm/module:437:15)
+    at async formattedImport (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/nodejs/esm-utils.js:9:14)
+    at async Object.exports.requireOrImport (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/nodejs/esm-utils.js:42:28)
+    at async Object.exports.loadFilesAsync (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/nodejs/esm-utils.js:100:20)
+    at async singleRun (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/cli/run-helpers.js:125:3)
+    at async Object.exports.handler (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/cli/run.js:370:5)
+2023-06-24 17:13:55 error: uncaughtException: listen EADDRINUSE: address already in use :::5000
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at Server.listen (node:net:1508:7)
+    at Function.listen (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/express/lib/application.js:635:24)
+    at file:///home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/src/app.js:60:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:198:25)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:385:24)
+    at async importModuleDynamicallyWrapper (node:internal/vm/module:437:15)
+    at async formattedImport (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/nodejs/esm-utils.js:9:14)
+    at async Object.exports.requireOrImport (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/nodejs/esm-utils.js:42:28)
+    at async Object.exports.loadFilesAsync (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/nodejs/esm-utils.js:100:20)
+    at async singleRun (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/cli/run-helpers.js:125:3)
+    at async Object.exports.handler (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/cli/run.js:370:5)
+2023-06-24 17:17:31 error: uncaughtException: listen EADDRINUSE: address already in use :::5000
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at Server.listen (node:net:1508:7)
+    at Function.listen (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/express/lib/application.js:635:24)
+    at file:///home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/src/app.js:60:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:198:25)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:385:24)
+    at async importModuleDynamicallyWrapper (node:internal/vm/module:437:15)
+    at async formattedImport (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/nodejs/esm-utils.js:9:14)
+    at async Object.exports.requireOrImport (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/nodejs/esm-utils.js:42:28)
+    at async Object.exports.loadFilesAsync (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/nodejs/esm-utils.js:100:20)
+    at async singleRun (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/cli/run-helpers.js:125:3)
+    at async Object.exports.handler (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/cli/run.js:370:5)
+2023-06-24 17:18:00 error: uncaughtException: listen EADDRINUSE: address already in use :::5000
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at Server.listen (node:net:1508:7)
+    at Function.listen (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/express/lib/application.js:635:24)
+    at file:///home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/src/app.js:60:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:198:25)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:385:24)
+    at async importModuleDynamicallyWrapper (node:internal/vm/module:437:15)
+    at async formattedImport (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/nodejs/esm-utils.js:9:14)
+    at async Object.exports.requireOrImport (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/nodejs/esm-utils.js:42:28)
+    at async Object.exports.loadFilesAsync (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/nodejs/esm-utils.js:100:20)
+    at async singleRun (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/cli/run-helpers.js:125:3)
+    at async Object.exports.handler (/home/rabindranath/Documents/coderhouse/Adoptme-ultima-pract-integradora-deploy-cloud/node_modules/mocha/lib/cli/run.js:370:5)
